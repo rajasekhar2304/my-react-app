@@ -1,14 +1,17 @@
 pipeline 
 {
     agent any
-    
+    tools
+    {
+        nodejs  "node"
+    }
     stages 
     {
         stage("SCM Checkout") 
         {
             steps 
             {                
-                git branch: 'master', credentialsId: "github_access", url: "https://github.com/rajasekhar2304/my-react-app.git"            
+                git branch: 'master', credentialsId: 'github_access', url: 'https://github.com/rajasekhar2304/my-react-app.git'
             }
         }
         stage("Build") 
