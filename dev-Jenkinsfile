@@ -1,16 +1,20 @@
-pipeline {
+pipeline 
+{
     agent any
     
-    stages {
-        stage("SCM Checkout") {
-            steps {
-                git branch: 'master',
-                    credentialsId: "github_access",                
-                    url: "https://github.com/rajasekhar2304/my-react-app.git"            
+    stages 
+    {
+        stage("SCM Checkout") 
+        {
+            steps 
+            {                
+                git branch: 'master', credentialsId: "github_access", url: "https://github.com/rajasekhar2304/my-react-app.git"            
             }
         }
-        stage("Build") {
-            steps {
+        stage("Build") 
+        {
+            steps 
+            {
                 sh "npm run Remove"
                 sh "npm install"
                 sh "npm run clean"
