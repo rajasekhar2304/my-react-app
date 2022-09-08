@@ -5,8 +5,7 @@ function App() {
 	return (
     <div className="App">
 	<h1>Hello World! This is  Gurugubelli Rajasekhar</h1>
-  <h1>Hello World! This is Ravikanth</h1>		
-      <header className="App-header">
+        <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           DevRabbit offers you SmartQE to make Testing and Deployment easy.
